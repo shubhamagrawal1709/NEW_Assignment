@@ -4,10 +4,10 @@ import env.DriverUtil;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 public class ConfigurationMethods implements BaseTest {
   protected WebDriver driver = DriverUtil.getDefaultDriver();
   

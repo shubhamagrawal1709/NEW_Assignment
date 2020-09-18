@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="13" failures="0" name="env.RunCukeTest" time="0.003" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="browser" value="chrome"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/b0214198/Desktop/Cucumber_Automation_Project/selenium-cucumber-java-maven-example"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/b0214198/Desktop/Cucumber_Automation_Project/selenium-cucumber-java-maven-example"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/mm/96lmpfg97q70pzpz778tfpqc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/b0214198/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2364465864186225592.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/b0214198/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="driverPath" value="/Users/b0214198/Downloads/chromedriver_new3"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/b0214198"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="b0214198"/>
+    <property name="java.class.path" value="/private/var/folders/mm/96lmpfg97q70pzpz778tfpqc0000gn/T/AppTranslocation/FDE2CBF9-7004-4BD4-AE2A-6004394C315F/d/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test -DdriverPath=/Users/b0214198/Downloads/chromedriver_new3 -Dbrowser=chrome"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="java.ext.dirs" value="/Users/b0214198/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/b0214198/Desktop/Cucumber_Automation_Project/selenium-cucumber-java-maven-example/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Given I navigate to &quot;https://www.ndtv.com/.&quot;" time="0.002"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I click on subMenu options" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I click on weather tab" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I enter &quot;Bhopal&quot; into input searchBox field" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then Entered &quot;Bhopal&quot; should be present" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I check the checkbox having &quot;Bhopal&quot;" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I store the temperature for &quot;Bhopal&quot;" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I need to call weatehr API endpoint &quot;api.openweathermap.org/data/2.5/weather&quot; with city &quot;Bhopal&quot; and appid &quot;7fe67bf08c80ded756e598d6f8fedaea&quot;" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I need to compare the temperature with variance of &quot;2&quot; degree" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="Then I take screenshot" time="0"/>
+  <testcase classname="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" name="| https://www.ndtv.com/. | Bhopal | api.openweathermap.org/data/2.5/weather | 7fe67bf08c80ded756e598d6f8fedaea | 2 |" time="0"/>
+  <testcase classname="Scenario: Close browser" name="Then I close browser" time="0"/>
+  <testcase classname="Scenario: Close browser" name="Scenario: Close browser" time="0.001"/>
+</testsuite>

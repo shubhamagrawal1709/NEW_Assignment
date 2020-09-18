@@ -2,6 +2,8 @@ package info.seleniumcucumber.methods;
 
 import java.util.List;
 import java.util.function.Function;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -16,10 +18,23 @@ public class InputMethods extends SelectElementByType implements BaseTest {
     this.driver.findElement(getelementbytype(accessType, accessName)).sendKeys(new CharSequence[] { text });
   }
   
+  public void enterText(String text, By accessName) {
+	    this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(accessName));
+	    this.driver.findElement(accessName).sendKeys(new CharSequence[] { text });
+	  }
+  
+  
+  
   public void clearText(String accessType, String accessName) {
     this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(getelementbytype(accessType, accessName)));
     this.driver.findElement(getelementbytype(accessType, accessName)).clear();
   }
+  
+  public void clearText(By accessName) {
+	    this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(accessName));
+	    this.driver.findElement(accessName).clear();
+	  }
+	  
   
   public void selectelementfromdropdownbytype(Select select_list, String bytype, String option) {
     if (bytype.equals("selectByIndex")) {
@@ -68,11 +83,23 @@ public class InputMethods extends SelectElementByType implements BaseTest {
       checkbox.click(); 
   }
   
-  public void uncheckCheckbox(String accessType, String accessName) {
-    WebElement checkbox = (WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(getelementbytype(accessType, accessName)));
+  public void checkCheckbox(By accessName) {
+	    WebElement checkbox = (WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(accessName));
+	    if (!checkbox.isSelected())
+	      checkbox.click(); 
+	  }
+  
+  public void uncheckCheckbox(By accessName) {
+    WebElement checkbox = (WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(accessName));
     if (checkbox.isSelected())
       checkbox.click(); 
   }
+  
+  public void uncheckCheckbox(String accessType, String accessName) {
+	    WebElement checkbox = (WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(getelementbytype(accessType, accessName)));
+	    if (checkbox.isSelected())
+	      checkbox.click(); 
+	  }
   
   public void toggleCheckbox(String accessType, String accessName) {
     ((WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(getelementbytype(accessType, accessName)))).click();

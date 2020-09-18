@@ -1,0 +1,32 @@
+@Weather1
+Feature: to check weather comparision
+
+  Scenario Outline: I login with valid credential                                               [90m# features/my_first.feature:3[0m
+    [36mGiven [0m[36mI navigate to "<URL>"[0m
+    [36mThen [0m[36mI click on subMenu options[0m
+    [36mThen [0m[36mI click on weather tab[0m
+    [36mThen [0m[36mI enter "<city>" into input searchBox field[0m
+    [36mThen [0m[36mEntered "<city>" should be present[0m
+    [36mThen [0m[36mI check the checkbox having "<city>"[0m
+    [36mThen [0m[36mI store the temperature for "<city>"[0m
+    [36mThen [0m[36mI need to call weatehr API endpoint "<API_URL>" with city "<city>" and appid "<appid>"[0m
+    [36mThen [0m[36mI need to compare the temperature with variance of "<variance>" degree[0m
+    [36mThen [0m[36mI take screenshot[0m
+
+    Examples: 
+
+  @Weather1
+  Scenario Outline: I login with valid credential                                                                                                      [90m# features/my_first.feature:18[0m
+    [32mGiven [0m[32mI navigate to "[0m[32m[1mhttps://www.ndtv.com/.[0m[32m"[0m                                                                                                       [90m# PredefinedStepDefinitions.navigate_to(String)[0m
+    [32mThen [0m[32mI click on subMenu options[0m                                                                                                                    [90m# NDTVSteps.i_click_on_subMenu_options()[0m
+    [32mThen [0m[32mI click on weather tab[0m                                                                                                                        [90m# NDTVSteps.i_click_on_weather_tab()[0m
+    [32mThen [0m[32mI enter "[0m[32m[1mBhopal[0m[32m" into input searchBox field[0m                                                                                                   [90m# NDTVSteps.i_enter_into_input_searchBox_field(String)[0m
+    [32mThen [0m[32mEntered "[0m[32m[1mBhopal[0m[32m" should be present[0m                                                                                                            [90m# NDTVSteps.entered_should_be_present(String)[0m
+    [32mThen [0m[32mI check the checkbox having "[0m[32m[1mBhopal[0m[32m"[0m                                                                                                          [90m# NDTVSteps.i_check_the_checkbox_having(String)[0m
+    [32mThen [0m[32mI store the temperature for "[0m[32m[1mBhopal[0m[32m"[0m                                                                                                          [90m# NDTVSteps.i_store_the_temperature(String)[0m
+    [32mThen [0m[32mI need to call weatehr API endpoint "[0m[32m[1mapi.openweathermap.org/data/2.5/weather[0m[32m" with city "[0m[32m[1mBhopal[0m[32m" and appid "[0m[32m[1m7fe67bf08c80ded756e598d6f8fedaea[0m[32m"[0m [90m# NDTVSteps.i_need_to_call_weatehr_API_endpoint_with_city_and_appid(String,String,String)[0m
+    [32mThen [0m[32mI need to compare the temperature with variance of "[0m[32m[1m2[0m[32m" degree[0m                                                                                 [90m# NDTVSteps.i_need_to_compare_the_temperature_with_variance_of_degree(String)[0m
+    [32mThen [0m[32mI take screenshot[0m                                                                                                                             [90m# PredefinedStepDefinitions.take_screenshot()[0m
+
+  Scenario: Close browser [90m# features/my_first.feature:20[0m
+    [32mThen [0m[32mI close browser[0m  [90m# PredefinedStepDefinitions.close_browser()[0m

@@ -11,7 +11,7 @@ Automate your test cases with minimal coding.
 
 Documentation
 -------------
-
+https://github.com/shubhamagrawal1709/TestVagrant_Assignment.git
 
 Download a Framework
 --------------
@@ -80,7 +80,7 @@ Running test
 
 Go to your project directory from terminal and hit following commands
 * `mvn test (defualt will run on local firefox browser)`
-* `mvn test "-Dbrowser=chrome" (to use any other browser)`
+* `mvn test "-Dbrowser=chrome"  "D-driverPath=driverPath"  (to use any other browser)`
 * `mvn test -Dcucumber.options="classpath:features/my_first.feature"` to run specific feature.
 * `mvn test -Dcucumber.options="–-plugin html:target/result-html"` to generate a HTML report.
 * `mvn test -Dcucumber.options="–-plugin json:target/result-json"` to generate a JSON report.

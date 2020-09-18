@@ -2,6 +2,8 @@ package info.seleniumcucumber.methods;
 
 import java.util.List;
 import java.util.function.Function;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -92,6 +94,11 @@ public class AssertionMethods extends SelectElementByType implements BaseTest {
     this.element = (WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(getelementbytype(accessType, accessName)));
     return this.element.isDisplayed();
   }
+  
+  public boolean isElementDisplayed(By accessName) {
+	    this.element = (WebElement)this.wait.until((Function)ExpectedConditions.presenceOfElementLocated(accessName));
+	    return this.element.isDisplayed();
+	  }
   
   public void checkElementPresence(String accessType, String accessName, boolean testCase) throws TestCaseFailed {
     if (testCase) {
